@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      #task-list {
+        margin-bottom: 20px;
+      }
+
+      #task-list div {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      #create-task-form {
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 300px;
+      }
+
+      #create-task-form h3 {
+        margin-bottom: 10px;
+      }
+
+      #create-task-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      #create-task-form input,
+      #create-task-form textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+
+      #create-task-form button {
+        padding: 5px 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      #create-task-form button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Task Dashboard</h2>
+    <div id="task-list">
+      <!-- The fetched tasks will be dynamically inserted here -->
+    </div>
+    <form id="create-task-form">
+      <h3>Create Task</h3>
+      <label for="task-title">Task Title:</label>
+      <input type="text" id="task-title" required /><br />
+      <label for="task-description">Task Description:</label>
+      <textarea id="task-description" required></textarea><br />
+      <button type="submit">Create</button>
+    </form>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
